@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <title>hello-wasm example</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet"> 
+  </head>
+
+  <style>
+    body {
+      font-style: normal;
+      font-family: 'Manrope', sans-serif;
+      color: #121;
+      background-color: cornsilk;
+    }
+ 
+  </style>
+<body>
+    
+  <main>
+    <!-- future content in here -->
+  </main>
+  
+  <script type="module">
+    import init, { greet } from "./pkg/hello_wasm.js";
+    init().then(() => {
+      greet("World!");
+    });
+  </script>
+</body>
+</html>
